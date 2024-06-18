@@ -1,5 +1,6 @@
 //C program to start race between hare and tortoise
 #include<stdio.h>
+#include<unistd.h>
 #include<stdlib.h>
 #include<time.h>
 #define SIZE 70
@@ -57,6 +58,7 @@ int main(){
 
         track[trackTortise]=' ';
         track[trackHare]=' ';
+        sleep(1); //for one second pause
     }
     
     if(finish){
